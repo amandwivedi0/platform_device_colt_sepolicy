@@ -24,3 +24,6 @@ BOARD_SEPOLICY_DIRS += \
     device/colt/sepolicy/common/dynamic \
     device/colt/sepolicy/common/vendor
 endif
+
+# Selectively include legacy rules defined by the products
+-include device/xtended/sepolicy/legacy-common/sepolicy.mk
